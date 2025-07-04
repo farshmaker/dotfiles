@@ -1,14 +1,16 @@
+window-colorspace = display-p3
 theme = catppuccin-mocha
 cursor-color = #F5E0DC
 cursor-text = #11111B
-font-family = "JetBrains Mono"
+font-family = FiraCode Nerd Font Mono
 font-size = 18
-background-blur = true
-background-opacity = 0.9
-window-decoration = false
+# background-blur = true
+# background-opacity = 0.9
+macos-titlebar-style = hidden
 window-padding-x = 15
 window-padding-y = 15
 adjust-cell-height = 20%
+window-save-state = always
 
 # keybindings
 # keybind = cmd+s>r=reload_config
