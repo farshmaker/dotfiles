@@ -10,8 +10,8 @@ return {
     opts = {
       workspaces = {
         {
-          name = 'personal',
-          path = '/Users/farshmaker/Library/Mobile Documents/iCloud~md~obsidian/Documents/GorrVault',
+          name = 'work',
+          path = os.getenv 'OBSIDIAN_HOME',
         },
       },
       ui = { enable = false },
@@ -22,4 +22,15 @@ return {
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
     opts = {},
   },
+  -- TODO: install npm or yarn
+  -- {
+  --   'iamcco/markdown-preview.nvim',
+  --   cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+  --   build = 'cd app && npm install',
+  --   init = function()
+  --     vim.g.mkdp_filetypes = { 'markdown' }
+  --   end,
+  --   ft = { 'markdown' },
+  --   -- enabled = false,
+  -- },
 }
