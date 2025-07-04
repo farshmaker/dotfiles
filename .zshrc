@@ -61,6 +61,8 @@ alias lls='colorls --sd -X -gc -lgo'
 alias lts='colorls --sd -X -gc -lgo --tree'
 alias lo='colorls --sd -X -l' # Show owner and group
 
+alias cat='bat -Pp'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
