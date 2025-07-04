@@ -1,1 +1,10 @@
 .DS_Store
+
+# nvim
+tags
+test.sh
+.luarc.json
+spell/
+lazy-lock.json
+
+.config/tmux/plugins
