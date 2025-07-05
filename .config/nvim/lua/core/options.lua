@@ -23,6 +23,10 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
+-- vim.opt.wrap = false
+
+-- Required for obsidian markdown rendering
+vim.opt.conceallevel = 2
 
 -- Configure tabs
 vim.opt.tabstop = 4
@@ -70,6 +74,3 @@ vim.opt.hlsearch = true
 
 -- for metal and dap
 vim.opt_global.completeopt = { 'menuone', 'noinsert', 'noselect' }
-
--- Required for obsidian markdown rendering
-vim.opt.conceallevel = 2
