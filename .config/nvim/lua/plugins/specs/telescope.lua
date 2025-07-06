@@ -21,9 +21,13 @@ return {
     config = function()
       require('telescope').setup {
         defaults = {
-          --   mappings = {
-          --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-          -- },
+          mappings = {
+            i = {
+              ['<c-f>'] = 'to_fuzzy_refine',
+              ['<c-x>'] = require('telescope.actions').delete_buffer,
+              ['<c-h>'] = require('telescope.actions').select_horizontal,
+            },
+          },
         },
         -- pickers = {}
         extensions = {
