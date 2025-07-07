@@ -76,6 +76,3 @@ vim.opt.hlsearch = true
 
 -- for metal and dap
 vim.opt_global.completeopt = { 'menuone', 'noinsert', 'noselect' }
-
-vim.opt.foldenable = true
-vim.opt.foldmethod = 'indent'
