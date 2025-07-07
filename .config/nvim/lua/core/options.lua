@@ -76,3 +76,12 @@ vim.opt.hlsearch = true
 
 -- for metal and dap
 vim.opt_global.completeopt = { 'menuone', 'noinsert', 'noselect' }
+
+-- Disable auto-commenting when pressing Enter or o/O in comment blocks
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = '*',
+  callback = function()
+    vim.opt.formatoptions:remove { 'r', 'o' }
+  end,
+})
+vim.opt.shada = { "'10", '<0', 's10', 'h' }

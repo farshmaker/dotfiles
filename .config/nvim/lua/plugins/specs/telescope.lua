@@ -21,6 +21,16 @@ return {
     config = function()
       require('telescope').setup {
         defaults = {
+          layout_strategy = 'vertical',
+          layout_config = {
+            vertical = {
+              size = {
+                width = '95%',
+                height = '95%',
+              },
+              preview_height = 0.7,
+            },
+          },
           mappings = {
             i = {
               ['<c-f>'] = 'to_fuzzy_refine',
