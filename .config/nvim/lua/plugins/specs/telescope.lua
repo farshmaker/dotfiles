@@ -24,11 +24,14 @@ return {
           layout_strategy = 'vertical',
           layout_config = {
             vertical = {
-              size = {
-                width = '95%',
-                height = '95%',
-              },
+              width = 0.95, -- Reduce from 95% to 85%
+              height = 0.95, -- Reduce from 95% to 85%
+              -- size = {
+              --   width = '95%',
+              --   height = '95%',
+              -- },
               preview_height = 0.7,
+              preview_cutoff = 20,
             },
           },
           mappings = {
