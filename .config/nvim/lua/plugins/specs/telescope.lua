@@ -30,7 +30,7 @@ return {
               --   width = '95%',
               --   height = '95%',
               -- },
-              preview_height = 0.7,
+              preview_height = 0.6,
               preview_cutoff = 20,
             },
           },
