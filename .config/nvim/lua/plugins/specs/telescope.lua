@@ -89,6 +89,18 @@ return {
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
+
+      vim.keymap.set('n', '<leader>oo', function()
+        builtin.live_grep { cwd = os.getenv 'OBSIDIAN_HOME' }
+      end, { desc = '[S]earch [N]eovim files' })
+    end,
+  },
+  { -- INFO: https://github.com/nvim-telescope/telescope-frecency.nvim
+    'nvim-telescope/telescope-frecency.nvim',
+    -- install the latest stable version
+    version = '*',
+    config = function()
+      require('telescope').load_extension 'frecency'
     end,
   },
 }

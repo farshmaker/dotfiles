@@ -15,6 +15,20 @@ return {
         },
       },
       ui = { enable = false },
+      mappings = {
+        ['gf'] = {
+          action = function()
+            return require('obsidian').util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+      },
+      completion = {
+        -- Set to false to disable completion.
+        nvim_cmp = true,
+        -- Trigger completion at 2 chars.
+        min_chars = 0,
+      },
     },
   },
   {
@@ -25,7 +39,7 @@ return {
       vim.cmd(string.format([[highlight Headline1Bg gui=bold guibg=%s guifg=%s ]], '#9FD79F', text_color))
       -- vim.cmd(string.format([[highlight Headline1Fg cterm=bold gui=bold guifg=%s]], color_fg))
     end,
-    enabled = true,
+    enabled = false,
     opts = {
       completions = { lsp = { enabled = true } },
       heading = {
