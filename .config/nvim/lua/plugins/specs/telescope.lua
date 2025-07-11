@@ -93,6 +93,10 @@ return {
       vim.keymap.set('n', '<leader>oo', function()
         builtin.live_grep { cwd = os.getenv 'OBSIDIAN_HOME' }
       end, { desc = '[S]earch [N]eovim files' })
+
+      vim.keymap.set('n', '<leader>of', function()
+        builtin.find_files { cwd = os.getenv 'OBSIDIAN_HOME' }
+      end, { desc = '[S]earch [N]eovim files' })
     end,
   },
   { -- INFO: https://github.com/nvim-telescope/telescope-frecency.nvim

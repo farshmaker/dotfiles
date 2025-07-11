@@ -24,4 +24,4 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', 'gp', '`[v`]', { desc = 'Select pasted text' })
 
-vim.keymap.set('i', 'jk', '<Esc>', { noremap = true, silent = true })
+vim.keymap.set('i', 'jj', '<Esc>', { noremap = true, silent = true })

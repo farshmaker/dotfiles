@@ -34,24 +34,28 @@ return {
   {
     'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
-    init = function()
-      local text_color = '#080F18'
-      vim.cmd(string.format([[highlight Headline1Bg gui=bold guibg=%s guifg=%s ]], '#9FD79F', text_color))
-      -- vim.cmd(string.format([[highlight Headline1Fg cterm=bold gui=bold guifg=%s]], color_fg))
-    end,
-    enabled = false,
+    -- init = function()
+    --   local text_color = '#080F18'
+    --   vim.cmd(string.format([[highlight Headline1Bg gui=bold guibg=%s guifg=%s ]], '#9FD79F', text_color))
+    --   -- vim.cmd(string.format([[highlight Headline1Fg cterm=bold gui=bold guifg=%s]], color_fg))
+    -- end,
+    enabled = true,
     opts = {
       completions = { lsp = { enabled = true } },
       heading = {
+        backgrounds = {},
         sign = false,
-        icons = { '󰎤 ', '󰎧 ', '󰎪 ', '󰎭 ', '󰎱 ', '󰎳 ' },
-        backgrounds = {
-          'Headline1Bg',
-          'RenderMarkdownH2Bg',
-          'RenderMarkdownH3Bg',
-          'RenderMarkdownH4Bg',
-          'RenderMarkdownH5Bg',
-          'RenderMarkdownH6Bg',
+        border = false,
+        below = ' ',
+        above = ' ',
+        position = 'left',
+        icons = {
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
         },
       },
     },
